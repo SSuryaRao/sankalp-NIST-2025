@@ -538,7 +538,31 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .carousel-container {
+    height: 450px;
+    gap: 8px;
+  }
+
+  .path-card.expanded .category-title {
+    font-size: 2.8rem;
+  }
+
+  .category-description p {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 1024px) {
+  .unfold-your-path {
+    padding: 70px 20px;
+  }
+
+  .path-title {
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+
   .carousel-container {
     height: 400px;
   }
@@ -550,6 +574,11 @@
   .category-description p {
     font-size: 1rem;
   }
+
+  .explore-btn {
+    padding: 11px 35px;
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -557,57 +586,130 @@
     padding: 60px 15px;
   }
 
+  .path-title {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+  }
+
   .carousel-container {
     flex-direction: column;
     height: auto;
     gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .path-card {
     min-width: auto;
-    height: 80px;
+    height: 100px;
     flex: none;
+    width: 100%;
   }
 
   .path-card.expanded {
-    height: 400px;
+    height: 450px;
     flex: none;
   }
 
   .path-card.collapsed {
-    height: 60px;
+    height: 70px;
     flex: none;
   }
 
   .category-title {
     writing-mode: horizontal-tb;
     transform: rotate(0deg);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 0;
   }
 
   .path-card.expanded .category-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
   }
 
   .explore-btn {
     padding: 10px 30px;
     font-size: 0.9rem;
   }
+
+  .path-particle,
+  .corner-sparkle {
+    display: none;
+  }
+
+  .path-card:hover,
+  .path-card.expanded {
+    transform: scale(1.02);
+  }
 }
 
 @media (max-width: 480px) {
+  .unfold-your-path {
+    padding: 50px 15px;
+  }
+
   .path-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: 2px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+  }
+
+  .carousel-container {
+    gap: 12px;
+  }
+
+  .path-card {
+    height: 80px;
   }
 
   .path-card.expanded {
-    height: 350px;
+    height: 400px;
+  }
+
+  .path-card.collapsed {
+    height: 60px;
+  }
+
+  .category-title {
+    font-size: 1.4rem;
+  }
+
+  .path-card.expanded .category-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
   }
 
   .category-description p {
     font-size: 0.9rem;
     margin-bottom: 20px;
+  }
+
+  .explore-btn {
+    padding: 9px 25px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .path-title {
+    font-size: 1.8rem;
+  }
+
+  .path-card.expanded {
+    height: 380px;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .path-card.expanded .category-title {
+    font-size: 1.6rem;
+  }
+
+  .category-description p {
+    font-size: 0.85rem;
   }
 }

@@ -6,8 +6,8 @@ const ContactUs = () => {
     {
       id: 1,
       position: "President",
-      name: "Arja Avinash",
-      phone: "7873482228",
+      name: "Suvam Mishra",
+      phone: "7894409607",
       icon: "👑"
     },
     {

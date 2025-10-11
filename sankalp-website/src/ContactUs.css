@@ -1079,9 +1079,39 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .contacts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+  }
+
+  .contact-card {
+    padding: 45px 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-us {
+    padding: 90px 20px;
+  }
+
+  .contact-title {
+    font-size: 3rem;
+  }
+
+  .contacts-grid {
+    gap: 30px;
+  }
+
+  .accent-line,
+  .geo-shape {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .contact-us {
-    padding: 80px 20px;
+    padding: 70px 20px;
   }
 
   .contact-header {
@@ -1089,34 +1119,44 @@
   }
 
   .contact-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
   }
 
   .contacts-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+    max-width: 500px;
   }
 
   .contact-card {
-    padding: 35px 25px;
+    padding: 40px 30px;
   }
 
   .contact-icon {
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+
+  .icon-glow-ring {
+    width: 90px;
+    height: 90px;
   }
 
   .contact-position {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .contact-name {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .contact-phone {
     font-size: 1rem;
-    padding: 10px 25px;
+    padding: 12px 28px;
   }
 
   .get-in-touch {
@@ -1124,7 +1164,27 @@
   }
 
   .email-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .card-decorative-top,
+  .card-decorative-bottom {
+    width: 70%;
+  }
+
+  .corner-ornament,
+  .card-particle,
+  .contact-sparkle {
+    display: none;
+  }
+
+  .background-lines::before,
+  .background-lines::after {
+    display: none;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-12px) scale(1.03);
   }
 }
 
@@ -1133,8 +1193,13 @@
     padding: 60px 15px;
   }
 
+  .contact-header {
+    margin-bottom: 40px;
+  }
+
   .contact-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
   }
 
   .contact-subtitle {
@@ -1142,10 +1207,104 @@
   }
 
   .contact-card {
-    padding: 30px 20px;
+    padding: 35px 25px;
+  }
+
+  .contact-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .icon-glow-ring {
+    width: 80px;
+    height: 80px;
+  }
+
+  .contact-position {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+
+  .position-underline {
+    width: 50px;
+    margin: 8px auto 15px;
+  }
+
+  .contact-name {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-phone {
+    font-size: 0.95rem;
+    padding: 12px 25px;
+    gap: 8px;
+  }
+
+  .phone-icon {
+    font-size: 1.1rem;
   }
 
   .get-in-touch {
     padding: 20px 30px;
+  }
+
+  .touch-label {
+    font-size: 0.9rem;
+  }
+
+  .email-link {
+    font-size: 1.1rem;
+  }
+
+  .card-golden-border {
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-us {
+    padding: 50px 12px;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .contacts-grid {
+    gap: 25px;
+  }
+
+  .contact-card {
+    padding: 30px 20px;
+  }
+
+  .contact-icon {
+    font-size: 2.8rem;
+  }
+
+  .contact-position {
+    font-size: 1.2rem;
+  }
+
+  .contact-name {
+    font-size: 1.4rem;
+  }
+
+  .contact-phone {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .get-in-touch {
+    padding: 18px 25px;
+  }
+
+  .email-link {
+    font-size: 1rem;
   }
 }
